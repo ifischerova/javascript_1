@@ -1,5 +1,5 @@
 /* Prace s retezci */
-/*
+
 
 // 1. Vlastnosti a metody
 
@@ -47,7 +47,6 @@ document.body.innerHTML = address;
 
 /* Podminky */
 
-/*
 // 1. registrace na ockovani
 
 const jmeno = prompt("Zadejte jmeno:");
@@ -63,9 +62,7 @@ if (vek >= 65) {
 if (heslo.length < 8) {
     document.body.innerHTML += "Koukej si vymyslet poradne dlouhy heslo!<br>";
 }
-*/
 
-/*
 
 // 2. Cena vstupenky
 
@@ -86,12 +83,12 @@ if (age <= 6) {
     document.body.innerHTML = `"Divadlo te bude stat ${plnaCena} euro."`;
 };
 
-*/
+
 
 /* Doporucene ulozky na doma */
 
 // 1. FIT email
-/*
+
 const name = prompt("Krestni jmeno bez diakritiky:").trim().slice(0,3);
 const surname = prompt("Prijmeni bez diakritiky:").trim().slice(0,4);
 
@@ -100,7 +97,7 @@ const emailAddress = surname + name + '@' + 'fit.cvut.cz';
 document.body.innerHTML = `
    "Tvoje emailova adresa je ${emailAddress}.";
 `
-*/
+
 // 2. Mnozstevni slevy
 
 const numberOfTshirts = Number(prompt("Kolik objednavate kusu?"))
@@ -122,3 +119,10 @@ if (numberOfTshirts < 50 ) {
 document.body.innerHTML = `
     Za jedno tricko zaplatite ${price} Kc.
 `
+
+/* Volitelne ulozky na doma */
+
+// 1. Ruleta
+
+let number = Number(prompt("Zadejte cislo od 0 do 36 vcetne:"));
+
