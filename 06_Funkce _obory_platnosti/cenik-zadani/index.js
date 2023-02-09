@@ -13,8 +13,9 @@ const selectPlan = (planNumber) => {
         elem = document.querySelector("#plan3");
         elem.classList.toggle("plan--selected");
     } else {
-      return "Takovyhle plan nemame."  
+    return "Takovyhle plan nemame."  
     }
 };
 
 console.log(selectPlan(planNumber));
+
