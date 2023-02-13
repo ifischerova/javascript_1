@@ -1,0 +1,11 @@
+.move {
+    margin-left: 50px;
+}
+
+.car {
+    background-color: lightblue;
+}
+
+.car__image {
+    display: block;
+}
