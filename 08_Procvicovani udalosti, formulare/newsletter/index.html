@@ -13,11 +13,23 @@
 
 <body>
     
- <form id="newsletterRegistration">
-    <p>Jednou za tyden posilame newsletter ze sveta frontendu a UX. Zadejte svuj email a zustante v obraze.</p>
-    <input id="newsletterEmailAddress" type="email"/>
-    <button type="submit">Odebirat</button>
- </form>
+    <form id="newsletterRegistration">
+        <p>Jednou za tyden posilame newsletter ze sveta frontendu a UX. Zadejte svuj email a zustante v obraze.</p>
+        <input id="newsletterEmailAddress" type="email"/>
+        <button type="submit">Odebirat</button>
+    </form>
+
+    <form id="orderForm" class="form">
+        <label for="cardNumber">Platebni karta:<input id="cardNumber" class="field" type="text"/></label>
+        <label for="selectLogistic">Doprava:</label>
+        <select id="selectLogistic" class="field" type="select">
+            <option class="options" value="pobocka">Vyzvednout na pobocce</option>
+            <option class="options" value="zasilkovna">Zasilkovna</option>
+            <option class="options" value="posta">Ceska posta</option>
+            <option class="options" value="ppl">PPL</option>
+        </select>
+        <button type="submit">Odeslat objednavku</button>
+    </form>
 </body>
 
 </html>
