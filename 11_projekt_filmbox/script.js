@@ -106,3 +106,24 @@ const filmy = [
 		premiera: '2022-12-24',
 	},
 ]
+
+
+const menuTlacitko = document.querySelector('#menu-tlacitko');
+
+const menuPolozky = document.querySelector('#menu-polozky');
+
+const menuCrossIcon = document.querySelector('.fa-xmark');
+
+const menuBarsIcon = document.querySelector('.fa-bars');
+
+const addShowClass = () => {
+	menuPolozky.classList.toggle('show');
+	if (menuPolozky.classList.contains('show')) {
+		menuTlacitko.innerHTML = `<i class="fas fa-xmark"></i>`;
+	} else {
+		menuTlacitko.innerHTML = `<i class="fas fa-bars"></i>`;
+	}
+}
+
+menuTlacitko.addEventListener('click', addShowClass);
+
